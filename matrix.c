@@ -295,7 +295,7 @@ int multiply_matrix(int** matrix_a, int** matrix_t, int row, int col) // multipl
         for(int j=0;j<row;j++) // matrix_a 와 matrix_a_t의 곱이므로 행,열 값이 서로 같음. 따라서 for문에서 둘다 row까지 증가.
        {
            int multiply=0;
-           for(int k=0;k<row;k++)
+           for(int k=0;k<col;k++)
         {
             multiply+=matrix_a[i][k]*matrix_t[k][j]; //multiply_matrix[i][j]=matrix_a[0][0]*matrix_a_t[0][0]+matrix_a[1][0]*matrix_a_t[0][1]+...+
             //matrix_a[i][row]*matrix_a_t[row][j] 이므로 각각의 곱을 계속하여 더함
