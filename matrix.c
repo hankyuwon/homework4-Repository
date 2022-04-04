@@ -298,7 +298,7 @@ int multiply_matrix(int** matrix_a, int** matrix_t, int row, int col) // multipl
            for(int k=0;k<col;k++)
         {
             multiply+=matrix_a[i][k]*matrix_t[k][j]; //multiply_matrix[i][j]=matrix_a[0][0]*matrix_a_t[0][0]+matrix_a[1][0]*matrix_a_t[0][1]+...+
-            //matrix_a[i][row]*matrix_a_t[row][j] 이므로 각각의 곱을 계속하여 더함
+            //matrix_a[i][col]*matrix_a_t[col][j] 이므로 각각의 곱을 계속하여 더함
         }
         multiply_matrix[i][j]=multiply; //각각의 곱을 더한값을 multiply_matrix[i][j] 값에 넣어줌.
        }
